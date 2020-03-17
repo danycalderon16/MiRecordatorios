@@ -5,6 +5,7 @@
  */
 package componentes;
 
+import java.awt.Color;
 import javax.swing.JPanel;
 import static proyecto.Utils.*;
 
@@ -20,6 +21,13 @@ public class PanelRecordatorio extends JPanel{
         
     }
     
+    public void setColor(Color newColor){
+        this.setBackground(newColor);
+    }
+    
+    public void enviarTamanio(int w, int h){
+        this.setSize(w, h);
+    }
     
     
 }

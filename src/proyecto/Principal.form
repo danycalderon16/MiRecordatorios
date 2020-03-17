@@ -23,7 +23,6 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="toolbar2" alignment="0" max="32767" attributes="0"/>
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace min="-2" pref="85" max="-2" attributes="0"/>
               <Component id="panelRecordaorios2" min="-2" max="-2" attributes="0"/>
@@ -34,13 +33,14 @@
               <Component id="botonSiguiente2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
+          <Component id="toolbar1" alignment="0" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
-              <Component id="toolbar2" min="-2" pref="70" max="-2" attributes="0"/>
-              <EmptySpace min="-2" pref="31" max="-2" attributes="0"/>
+              <Component id="toolbar1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
               <Component id="panelRecordaorios2" min="-2" max="-2" attributes="0"/>
               <EmptySpace pref="113" max="32767" attributes="0"/>
               <Component id="botonSiguiente2" min="-2" max="-2" attributes="0"/>
@@ -50,16 +50,14 @@
     </DimensionLayout>
   </Layout>
   <SubComponents>
-    <Container class="componentes.Toolbar" name="toolbar2">
-
-      <Layout class="org.netbeans.modules.form.compat2.layouts.DesignGridBagLayout"/>
-    </Container>
     <Component class="componentes.BotonSiguiente" name="botonSiguiente2">
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonSiguiente2MouseClicked"/>
       </Events>
     </Component>
     <Component class="componentes.PanelRecordaorios" name="panelRecordaorios2">
+    </Component>
+    <Component class="componentes.Toolbar" name="toolbar1">
     </Component>
   </SubComponents>
 </Form>
