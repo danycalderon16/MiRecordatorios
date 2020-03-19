@@ -14,7 +14,7 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
-import static proyecto.Utils.blanco;
+import static util.Utils.blanco;
 
 /**
  *

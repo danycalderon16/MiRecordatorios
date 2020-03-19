@@ -8,7 +8,7 @@ package componentes;
 import javax.swing.JComboBox;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
-import static proyecto.Utils.blanco;
+import static util.Utils.blanco;
 
 /**
  *

@@ -8,7 +8,7 @@ package componentes;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
-import static proyecto.Utils.blanco;
+import static util.Utils.blanco;
 
 /**
  *

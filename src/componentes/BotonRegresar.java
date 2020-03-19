@@ -8,7 +8,7 @@ package componentes;
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
-import static proyecto.Utils.blanco;
+import static util.Utils.blanco;
 
 /**
  *

@@ -7,7 +7,7 @@ package componentes;
 
 import java.awt.Color;
 import javax.swing.JPanel;
-import static proyecto.Utils.*;
+import static util.Utils.*;
 
 /**
  *

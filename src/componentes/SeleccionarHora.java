@@ -6,7 +6,7 @@ import javax.swing.JComboBox;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import static proyecto.Utils.blanco;
+import static util.Utils.blanco;
 
 public class SeleccionarHora extends JPanel{
     

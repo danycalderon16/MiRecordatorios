@@ -8,8 +8,8 @@ package componentes;
 import java.awt.Color;
 import java.awt.Font;
 import proyecto.Principal;
-import static proyecto.Utils.blanco;
-import static proyecto.Utils.teal;
+import static util.Utils.blanco;
+import static util.Utils.teal;
 
 /**
  *

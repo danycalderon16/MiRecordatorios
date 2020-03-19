@@ -5,6 +5,11 @@
  */
 package proyecto;
 
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import sun.swing.SwingAccessor;
+import static util.Utils.*;
+
 /**
  *
  * @author Calderon
@@ -16,8 +21,12 @@ public class Principal extends javax.swing.JFrame {
      */
     public Principal() {
         initComponents();
-        toolbar1.setTitle("Mi Recordatorios");
-        toolbar1.removerICono();
+        toolbar.setColor(teal);
+        etiquetas1.escribir("Principal");
+        etiquetas1.setFont(new Font("Monospaced",Font.BOLD ,30));        
+        etiquetas1.setForeground(blanco);
+        etiquetas1.setHorizontalAlignment(SwingConstants.CENTER);
+                
     }
 
     /**
@@ -31,7 +40,8 @@ public class Principal extends javax.swing.JFrame {
 
         botonSiguiente2 = new componentes.BotonSiguiente();
         panelRecordaorios2 = new componentes.PanelRecordaorios();
-        toolbar1 = new componentes.Toolbar();
+        toolbar = new componentes.PanelRecordatorio();
+        etiquetas1 = new componentes.Etiquetas();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -41,6 +51,22 @@ public class Principal extends javax.swing.JFrame {
             }
         });
 
+        etiquetas1.setText("etiquetas1");
+
+        javax.swing.GroupLayout toolbarLayout = new javax.swing.GroupLayout(toolbar);
+        toolbar.setLayout(toolbarLayout);
+        toolbarLayout.setHorizontalGroup(
+            toolbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(etiquetas1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        toolbarLayout.setVerticalGroup(
+            toolbarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(toolbarLayout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addComponent(etiquetas1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -49,16 +75,16 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(85, 85, 85)
                 .addComponent(panelRecordaorios2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(134, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+            .addGroup(layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(botonSiguiente2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
-            .addComponent(toolbar1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(toolbar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(toolbar1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(toolbar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21)
                 .addComponent(panelRecordaorios2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 113, Short.MAX_VALUE)
@@ -111,7 +137,8 @@ public class Principal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private componentes.BotonSiguiente botonSiguiente2;
+    private componentes.Etiquetas etiquetas1;
     private componentes.PanelRecordaorios panelRecordaorios2;
-    private componentes.Toolbar toolbar1;
+    private componentes.PanelRecordatorio toolbar;
     // End of variables declaration//GEN-END:variables
 }
